@@ -10,7 +10,7 @@
 
 .box {
     background-color: rgb(27, 27, 27);
-    width: 80vw; /* Adjusted width for smaller screens */
+    width: 90vw; /* Adjusted width for smaller screens */
     max-width: 400px; /* Added maximum width for larger screens */
     height: auto; /* Changed height to auto for responsiveness */
     border-radius: 15px;
