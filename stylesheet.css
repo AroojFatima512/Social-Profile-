@@ -88,21 +88,16 @@
 /* Media Queries for Android phones */
 @media screen and (max-width: 480px) {
     .box {
-        height: 90vh;
-        width: 25vw;
+       max-width: 50%; /* Adjust container width */
+        margin-top: 20%; /* Adjust top margin */
+        width: 300px;
     }
-    .img {
-        height: 50px; /* Adjust size */
-        width: 50px; /* Adjust size */
-    }
-    .text {
-        margin-top: 10px; /* Adjust spacing */
-    }
-    .div {
-        height: 25px; /* Adjust height */
-        width: 20vw;
-    }
-    .h {
-        margin-right: 15px;
+}
+
+@media only screen and (max-width: 1440px) {
+    /* Adjustments for tablet screens */
+    .box {
+        max-width: 80%; /* Adjust container width */
+        margin-top: 15%; /* Adjust top margin */
     }
 }
