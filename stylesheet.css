@@ -1,0 +1,95 @@
+.main{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.box{
+    background-color: rgb(27, 27, 27);
+    width: 25vw;
+    height: 80vh;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+}
+.imgbox{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.img{
+    position: relative;
+    height: 80px;
+    width: 80px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+#location , #name{
+margin: 10px;
+}
+.text{
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#description{
+    margin-right: 20px;
+    font-size: smaller;
+}
+#location{
+    color: yellowgreen;
+    text-align: center;
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.div{
+    width: 20vw;
+    height: 35px;
+    margin: 8px;
+    background-color: rgb(54, 54, 54);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.h{
+    color: white;
+    margin-right: 45px;
+    text-align: center;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.div:hover{
+    background-color: greenyellow;
+    .h{
+        color: #000;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .main {
+        width: 320px;
+    }
+
+    #description {
+        font-size: 12px;
+    }
+}
