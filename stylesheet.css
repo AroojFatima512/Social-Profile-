@@ -10,35 +10,37 @@
 
 .box {
     background-color: rgb(27, 27, 27);
-    width: 90%;
-    max-width: 600px; /* Adjust max-width as needed */
-    min-width: 500px;
-    height: 80vh;
+    width: 90%; /* Adjusted width for smaller screens */
+    max-width: 400px; /* Added maximum width for larger screens */
+    height: auto; /* Changed height to auto for responsiveness */
     border-radius: 15px;
-    position: absolute;
+    position: relative; /* Changed position to relative */
 }
 
 .imgbox {
-    margin-top: 20px; /* Adjust spacing */
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
 }
 
 .img {
-    height: 70px; /* Adjust size */
-    width: 70px; /* Adjust size */
-    border-radius: 50%;
+    position: relative;
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
 }
 
-#location, #name {
+#location,
+#name {
     margin: 10px;
 }
 
 .text {
     color: white;
     text-align: center;
-    margin-top: 20px; /* Adjust spacing */
+    margin-top: 30px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -63,9 +65,9 @@
 }
 
 .div {
-    width: 90%;
-     max-width: 400px; /* Adjust max-width as needed */
-    height: 30px; /* Adjust height */
+    width: 80%; /* Adjusted width for smaller screens */
+    max-width: 200px; /* Added maximum width for larger screens */
+    height: 35px;
     margin: 8px;
     background-color: rgb(54, 54, 54);
     border-radius: 7px;
@@ -73,31 +75,29 @@
 
 .h {
     color: white;
-    margin-right: 25px;
+    margin-right: 45px;
     text-align: center;
     font-size: small;
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .div:hover {
     background-color: greenyellow;
-    color: black;
-}
-
-/* Media Queries for Android phones */
-@media screen and (max-width: 480px) {
-    .box {
-       max-width: 50%; /* Adjust container width */
-        margin-top: 20%; /* Adjust top margin */
-        width: 300px;
+    .h{
+        color: #000;
     }
 }
 
-@media only screen and (max-width: 1440px) {
-    /* Adjustments for tablet screens */
+@media only screen and (min-width: 768px) {
+    /* Apply styles for tablets */
     .box {
-        max-width: 80%; /* Adjust container width */
-        margin-top: 15%; /* Adjust top margin */
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    /* Apply styles for larger screens (desktops) */
+    .box {
+        width: 50%;
     }
 }
