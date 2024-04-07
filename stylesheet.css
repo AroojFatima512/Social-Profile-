@@ -1,4 +1,4 @@
-.main{
+.main {
     background-color: black;
     width: 100vw;
     height: 100vh;
@@ -7,83 +7,83 @@
     align-items: center;
     align-content: center;
 }
-.box{
+
+.box {
     background-color: rgb(27, 27, 27);
-    width: 25vw;
+    width: 90%;
+    max-width: 300px; /* Adjust max-width as needed */
     height: 80vh;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 15px;
     position: absolute;
 }
-.imgbox{
-    margin-top: 30px;
+
+.imgbox {
+    margin-top: 20px; /* Adjust spacing */
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
 }
-.img{
-    position: relative;
-    height: 80px;
-    width: 80px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+
+.img {
+    height: 70px; /* Adjust size */
+    width: 70px; /* Adjust size */
+    border-radius: 50%;
 }
-#location , #name{
-margin: 10px;
+
+#location, #name {
+    margin: 10px;
 }
-.text{
+
+.text {
     color: white;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px; /* Adjust spacing */
     font-family: Arial, Helvetica, sans-serif;
 }
-#description{
+
+#description {
     margin-right: 20px;
     font-size: smaller;
 }
-#location{
+
+#location {
     color: yellowgreen;
     text-align: center;
     margin-right: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
-.div{
-    width: 20vw;
-    height: 35px;
+
+.div {
+    width: 90%;
+    max-width: 200px; /* Adjust max-width as needed */
+    height: 30px; /* Adjust height */
     margin: 8px;
     background-color: rgb(54, 54, 54);
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
+    border-radius: 7px;
 }
-.h{
+
+.h {
     color: white;
-    margin-right: 45px;
+    margin-right: 25px;
     text-align: center;
     font-size: small;
     font-family: Arial, Helvetica, sans-serif;
 }
-.div:hover{
+
+.div:hover {
     background-color: greenyellow;
-    .h{
-        color: #000;
-    }
+    color: black;
 }
 
+/* Media Queries for Android phones */
 @media screen and (max-width: 480px) {
     .box {
         height: 90vh;
