@@ -65,7 +65,7 @@
 }
 
 .div {
-    width: 55vw; /* Adjusted width for smaller screens */
+    width: 50vw; /* Adjusted width for smaller screens */
     max-width: 300px; /* Added maximum width for larger screens */
     height: 35px;
     margin: 7px;
